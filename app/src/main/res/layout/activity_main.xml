@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/layout_margin"
+    tools:context="com.example.hitesh1bhutani.studentdiary_nhcps_forteachers.MainActivity">
+
+    <EditText
+        android:id="@+id/et_mainActivity_TeacherId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enter_teacher_id_here"
+        android:inputType="number"
+        android:layout_margin="@dimen/zero" />
+
+    <EditText
+        android:id="@+id/et_mainActivity_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:layout_marginTop="@dimen/mainActivity_et_margin"
+        android:layout_below="@id/et_mainActivity_TeacherId"/>
+
+    <Button
+        android:id="@+id/b_mainActivity_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logIn"
+        android:layout_below="@id/et_mainActivity_Password"
+        android:layout_marginTop="@dimen/mainActivity_et_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgotPassword"
+        android:layout_below="@id/b_mainActivity_Login"
+        android:layout_marginTop="@dimen/mainActivity_et_margin"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
